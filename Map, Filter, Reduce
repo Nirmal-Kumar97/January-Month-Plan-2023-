@@ -1,18 +1,32 @@
-//map
+Map
+
+It returns a new array from a function for each and every element.  map() does not execute the function for empty elements. 
+
+
 let arr = [1,2,3,4,5]
 let b = arr.map((i)=>{
     return i * 2
 })
 console.log(`new array returned by map`,b)
+new array returned by map [ 2, 4, 6, 8, 10 ]
 
-//reduce
+reduce
+
+It reduces the number of values to a single value. It executed form left to right.
+
 let c = arr.reduce((acc, i)=>{
     return acc+=i
 },1) // Here 0 is the accumulator (initial value).
 console.log(`new array returned by reduce`,c)
+new array returned by reduce 16
 
-//filter
+
+filter
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+
 let d = arr.filter((i)=>{
     return i%2==0; // condition for filtering the elements in array.
 })
 console.log(`new array returned by filter`,d)
+new array returned by filter [ 2, 4 ]
+
